@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<!--
+    /* 
+        //Autores:
+        //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+    */
+-->
+<head>
+    <meta charset="UTF-8">
+    <title>Emergente</title>
+    <link rel="stylesheet" href="../../Estilos/estiloAgregarEditar.css">
+    <link rel="shortcut icon" href="../../Estilos/LogoIcon.ico">
+    <script type="text/javascript"
+            src="https://cdn.datatables.net/1.13.4/js/jquery.dataTables.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../Javascript/operaciones.js"></script>
+</head>
+<body>
+    <div id="seccion" class="contenedor">
+        <h1>Editar producto</h1>
+        <form action="/producto/detalles" id="formularioEdit" class="formulario">
+            <div class="columna">
+                <label for="categoria">Categoria:</label>
+                <input type="text" name="Categoria" id="categoria1">
+                <label for="isbn">ISBN:</label>
+                <input type="text" name="ISBN" id="isbn1" readonly>
+                <label for="autor">Autor:</label>
+                <input type="text" name="Autor" id="autor1">
+
+                <label for="descuento">Descuento:</label>
+                <input type="text" name="Descuento" id="descuento1">
+            </div>
+
+            <div class="columna">
+                <label for="editorial">Editorial:</label>
+                <input type="text" name="Editorial" id="editorial1">
+                <label for="fecha">Fecha:</label>
+                <input type="text" name="Fecha" id="fecha1">
+
+                <label for="nombre">Nombre:</label>
+                <input type="text" name="Nombre" id="nombre1">
+
+                <label for="precio">Precio:</label>
+                <input type="text" name="Precio" id="precio1">
+            </div>
+            <div id="resultado"></div>
+            <div class="boton-container">
+
+                <button class="button" type="submit">
+                    <span>
+                        <svg xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 24 24" width="24"
+                            height="24"><path
+                                fill="none" d="M0 0h24v24H0z"></path><path
+                                fill="currentColor" d="M11
+                                11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path></svg>
+                        Editar producto
+                    </span>
+                </button>
+            </div>
+        </form>
+    </div>
+</body>
+<!--
+    /* 
+        //Autores:
+        //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+    */
+-->
+</html>

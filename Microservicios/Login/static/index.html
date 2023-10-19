@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>IFFI WS</title>
+        <link rel="stylesheet" href="../static/CSS/estilos.css">
+        <script
+      src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="/static/JS/LoginStyle.js"></script> <!--Js para estilos -->
+        <script src="/static/JS/JavaScriptLogico.js"></script> <!--Js para operaciones -->
+        <script src="/static/JS/Operaciones.js"></script><!--Js para llamada a autenticacion y verificacion-->
+        <link rel="shortcut icon" href="/static/CSS/LogoIcon.ico">
+    </head>
+    <body>
+        <div id="loader-wrapper"> <!--Este es el loader, usado para dar inicio a la pagina de Login-->
+            <div id="loader"></div>
+            <div class="loader-section section-left"></div>
+            <div class="loader-section section-right"></div>
+        </div>
+        <!-- LOGIN MODULE -->
+        <div class="login">
+            <div class="wrap">
+                <!-- TOGGLE -->
+                <div id="toggle-wrap">
+                    <div id="toggle-terms">
+                        <div id="cross">
+                            <span></span>
+                            <span></span>
+                        </div>
+                    </div>
+                </div>
+                <!-- TERMS -->
+                <div class="terms">
+                    <h2>Terminos de servicio</h2>
+                    <p class="small">Mayo 15, 2023</p>
+                    <h3>Bienvenido a IFFI WebServices</h3>
+                    <p>Al utilizar nuestros servicios, estás aceptando estos
+                        términos.
+                        Por favor, léelos cuidadosamente.</p>
+                    <p>Nuestros servicios son muy diversos, por lo que a veces
+                        pueden aplicarse términos adicionales o requisitos de
+                        productos (incluidos los requisitos de edad). Los
+                        términos adicionales estarán disponibles con los
+                        servicios relevantes y esos términos adicionales
+                        formarán parte de tu acuerdo con nosotros si utilizas
+                        esos servicios.</p>
+                    <h3>Uso de nuestros servicios</h3>
+                    <p>Debe seguir todas las políticas disponibles para usted
+                        dentro de los Servicios.</p>
+                    <p>El uso de nuestros Servicios no le otorga la propiedad de
+                        ningún derecho de propiedad intelectual en nuestros
+                        Servicios o en el contenido al que accede. No puede usar
+                        el contenido de nuestros Servicios a menos que obtenga
+                        permiso del propietario o tenga permitido hacerlo por
+                        ley. Estos términos no le otorgan el derecho a usar
+                        ninguna marca o logotipo utilizado en nuestros
+                        Servicios. No retire, oscurezca ni altere ningún aviso
+                        legal que se muestre en o junto con nuestros Servicios.</p>
+                    <p>En relación con su uso de los Servicios, podemos enviarle
+                        anuncios de servicio, mensajes administrativos y otra
+                        información. Puede optar por no recibir algunas de esas
+                        comunicaciones.</p>
+                    <h3>Su cuenta de IFFI Web Services</h3>
+                    <p>Es necesario tener una cuenta de IFFI WS para usar
+                        algunos de nuestros Servicios. Puede crear su propia
+                        cuenta de IFFI WS, o su cuenta puede ser asignada por
+                        un administrador, como su empleador o institución
+                        educativa. Si está utilizando una cuenta de IFFI WS
+                        asignada
+                        por un administrador, pueden aplicarse términos
+                        diferentes o adicionales y su administrador puede tener
+                        acceso o desactivar su cuenta.</p>
+                    <p>Para proteger su cuenta de IIFI WS, mantenga su
+                        contraseña
+                        confidencial. Usted es responsable de la actividad que
+                        ocurra en o a través de su cuenta de IFFI WS. Trate de
+                        no
+                        reutilizar su contraseña de cuenta en aplicaciones
+                        de terceros.</p>
+                    <h3>Privacidad y protección de derechos de autor</h3>
+                    <p>Las políticas de privacidad de IFFI WS explican cómo
+                        tratamos
+                        sus datos personales y protegemos su privacidad cuando
+                        utiliza nuestros Servicios. Al utilizar nuestros
+                        Servicios, acepta que IFFI WS puede utilizar dichos
+                        datos de
+                        acuerdo con nuestras políticas de privacidad.</p>
+                    <p>Respondemos a los avisos de presunta infracción de
+                        derechos de autor y cerramos las cuentas de infractores
+                        reincidentes de acuerdo con el proceso establecido en la
+                        Ley de Derechos de Autor del Milenio Digital de los EE.
+                        UU (en inglés Digital Millennium Copyright Act o DMCA).</p>
+                    <p>Proporcionamos información para ayudar a los titulares de
+                        derechos de autor a administrar su propiedad intelectual
+                        en línea. Si cree que alguien está violando sus derechos
+                        de autor y desea notificarnos, puede encontrar
+                        información sobre cómo presentar avisos y la política de
+                        dp sobre la respuesta a avisos en nuestro Centro de
+                        Ayuda.</p>
+                    <h3>Modificación y terminación de nuestros servicios</h3>
+                    <p>Estamos cambiando y mejorando constantemente nuestros
+                        Servicios. Podemos agregar o eliminar funcionalidades o
+                        características, y podemos suspender o detener un
+                        Servicio por completo.</p>
+                    <p>Puede dejar de usar nuestros Servicios en cualquier
+                        momento, aunque lamentaremos verlo ir. IFFI WS también
+                        puede dejar de proporcionarle Servicios, o agregar o
+                        crear
+                        nuevos límites a nuestros Servicios en cualquier
+                        momento.</p>
+                    <p>Creemos que usted es dueño de sus datos y preservar su
+                        acceso a dichos datos es importante. Si descontinuamos
+                        un Servicio, en la medida de lo razonablemente posible,
+                        le daremos un aviso razonable con anticipación y una
+                        oportunidad de obtener información de ese Servicio.</p>
+                    <h3>Originalidad del servicio</h3>
+                    <p>Facultad de Ciencias de la computación en Ingenieria en
+                        Tecnologías de la
+                        información (ITI), Benemeriata Universidad Autónoma de
+                        Puebla.</p>
+                    <p>Proyecto de la materia de Servicios Web impartida por el
+                        profesor Juan Carlos
+                        Conde Ramírez.</p>
+                    <p>Integrantes del equipo:</p>
+                    <p>Britany Iatii Perez Cadena</p>
+                    <p>Fatima Jiménez Bazán</p>
+                    <p>Ambas encargadas del Backend y Frontend de este proyecto</p>
+                </div>
+
+                <!--Autores:--> 
+                <!--Britany Itaii Perez Cadena - Fatima Jimenez Bazan -->
+
+                <!-- RECOVERY -->
+                <div class="recovery">
+                    <h2>Recuperar contraseña</h2>
+                    <p>Ingresa el <strong>correo electrónico</strong> o el
+                        <strong>nombre de usuario</strong> de la cuenta y haz
+                        clic en <strong>Enviar</strong>.</p>
+                    <p>Te enviaremos instrucciones por correo electrónico sobre
+                        cómo restablecer tu contraseña.</p>
+                    <form class="recovery-form" action="" method="post">
+                        <input type="text" class="input" id="user_recover"
+                            placeholder="Ingresa el correo electrónico o nombre
+                            de usuario">
+                        <input type="submit" class="button" value="Enviar">
+                    </form>
+                    <p class="mssg">Se ha enviado un correo electrónico con más
+                        instrucciones a tu dirección de correo electrónico.</p>
+                </div>
+
+                <!-- SLIDER -->
+                <div class="content">
+                    <!-- LOGO -->
+                    <div class="logo"> </div>
+                    <!-- SLIDESHOW -->
+                    <div id="slideshow">
+                        <div class="one">
+                            <h2><span>IFFI WS</span></h2>
+                            <p>Registrate para obtener nuestros servicios.</p>
+                        </div>
+                        <div class="two">
+                            <h2><span>Originalidad</span></h2>
+                            <p>Creado por:</p>
+                            <p>Britany Itaii Perez Cadena.</p>
+                            <p>Fatima Jiménez Bazán.</p>
+                            <p>Encargadas del Backend y Frontend de este
+                                servicio.</p>
+                        </div>
+                        <div class="three">
+                            <h2><span>Proyecto Final</span></h2>
+                            <p>Proyecto de la materia de Servicios Web impartida
+                                por el
+                                profesor Juan Carlos Conde Ramírez.</p>
+                        </div>
+                        <div class="four">
+                            <h2><span>BUAP</span></h2>
+                            <p>Facultad de Ciencias de la Computación en
+                                Ingenieria en tecnologias
+                                de la información.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <!-- LOGIN FORM -->
+                <div class="user">
+                    <!-- ACTIONS
+                      <div class="actions">
+                          <a class="help" href="#signup-tab-content">Sign Up</a><a class="faq" href="#login-tab-content">Login</a>
+                      </div>
+                      -->
+                    <div class="form-wrap">
+                        <!-- TABS -->
+                        <div class="tabs">
+                            <h3 class="login-tab"><a class="log-in active"
+                                    href="#login-tab-content"><span>Iniciar
+                                        sesión<span></a></h3>
+                                    <h3 class="signup-tab"><a class="sign-up"
+                                            href="#signup-tab-content"><span>Registro</span></a></h3>
+                                </div>
+                                <!-- TABS CONTENT -->
+                                <div class="tabs-content">
+                                    <!-- TABS CONTENT LOGIN -->
+                                    <div id="login-tab-content" class="active">
+                                        <form class="login-form"  id="loginForm" action="/auth"
+                                            method="post">
+                                            <input type="text" class="input"
+                                                id="user_login"
+                                                autocomplete="off"
+                                                placeholder="Correo
+                                                electrónico o nombre de usuario">
+                                            <input type="password" class="input"
+                                                id="pass_login"
+                                                autocomplete="off"
+                                                placeholder="Contraseña">
+                                            <input type="checkbox"
+                                                class="checkbox" checked
+                                                id="remember_me">
+                                            <label for="remember_me">Recuerdame</label>
+                                            <input type="submit" class="button"
+                                                value="Ingresar">
+                                        </form>
+                                        <div class="help-action">
+                                            <p><i class="fa fa-arrow-left"
+                                                    aria-hidden="true"></i><a
+                                                    class="forgot" href="#">Olvidé
+                                                    mi contraseña</a></p>
+                                        </div>
+                                    </div>
+                                    <!--Autores:--> 
+                                    <!--Britany Itaii Perez Cadena - Fatima Jimenez Bazan --> 
+                                    <!-- REGISTRO DEL USUARIO -->
+                                    <div id="signup-tab-content">
+                                        <form id="form_reg" method="post">
+                                            <input type="text" class="input" id="user_reg" name="usuario"
+                                                placeholder="Nombre de usuario" autocomplete="off">
+                                            <div id="ErrorUser" style="display:none;"></div>
+
+                                            <input type="password" class="input" id="pass_reg" name="contrasena"
+                                                placeholder="Contraseña" autocomplete="off">
+                                            <div id="ErrorPass" style="display:none;"></div>
+                                                
+                                            <input class="input" id="email_reg" name="correo"
+                                               placeholder="Correo electrónico" autocomplete="off">
+                                            <div id="ErrorEmail" style="display:none;"></div>
+                                            
+                                            <input type="submit" class="button" value="Registrarse">
+                                        </form>
+                                        <!-- <form id="formulario" method="post">
+                                            
+                                            <input type="text" id="usuario" name="usuario">
+                                            <div id="usuarioError" style="display: none;"></div>
+                                      
+                                            
+                                            <input type="password" id="contrasena" name="contrasena">
+                                            <div id="contrasenaError" style="display: none;"></div>
+                                      
+                                            
+                                            <input type="email" id="correo" name="correo">
+                                            <div id="correoError" style="display: none;"></div>
+                                      
+                                            <input type="submit" value="Registrarse" >
+                                          </form> -->
+                                        <div id="response-msg" style="display:
+                                            none;"></div>
+                                        <div class="help-action">
+                                            <p>Al registrarte aceptas nuestros
+                                                terminos y condiciones</p>
+                                            <p><i class="fa fa-arrow-left"
+                                                    aria-hidden="true"></i><a
+                                                    class="agree" href="#">Terminos
+                                                    de servicio</a></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div> <!-- END WRAP -->
+                </div> <!-- END LOGIN MODULE -->
+                <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+            </body>
+        </html>

@@ -1,0 +1,234 @@
+
+body {
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  background-color: #c5c4c4;
+  display: flex;
+  flex-direction: column;
+  
+}
+
+.detallesT {
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+/*Estilos para el menu de navegacion lateral*/
+
+h4 {
+  color: #8ED324;
+}
+
+.nav-tabs .nav-item .nav-link {
+  color: #F6F6F7;
+}
+
+.nav-tabs .nav-item .nav-link.active {
+  color: #B3B3B3;
+  background-color: #282828;
+}
+
+/* 
+    //Autores:
+    //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+*/
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 250px;
+  height: 100%;
+  background-color: #181824;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+
+
+.logo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.logo img {
+  width: 50px;
+  height: 50px;
+}
+
+.logo h2 {
+  color: #fff;
+  font-size: 20px;
+  margin-top: 10px;
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0px;
+}
+
+li {
+
+  border-bottom: 1px solid #31313C;
+  width: 85%;
+  margin-left: 10px;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a {
+  display: block;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 10px;
+  padding-left: 30px;
+}
+
+li a:hover {
+  background-color: #31313C;
+  transition: background-color .5s;
+}
+
+/* Estilos para la barra de navegacion superior */
+.new-nav {
+  position: fixed;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 20px;
+  margin-left: 250px;
+  width: calc(100% - 250px);
+  height: 80px;
+  top: 0;
+  left: 0;
+  background-color: #f7f5f5;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+.new-nav a {
+  color: #050202;
+  text-decoration: none;
+  padding: 10px;
+  /* Espacio entre cada item */
+  padding-left: 10px;
+  /* Para que el texto no quede pegado al icono */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.contenedor {    
+  margin-top: 80px;
+  margin-block: 100px;
+  padding: 10px;
+  margin-left: calc(275px + 15px);
+  width: 20%;
+  height: auto;
+  background-color: #f7f5f5;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 20px;
+  box-shadow: 5px 10px 8px rgba(0, 0, 0, 0.25);
+
+}
+
+/* 
+    //Autores:
+    //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+*/
+
+/*Boton para salir de la sesion*/
+.buttonL {
+  --primary-color: #79b61d;
+  --secondary-color: #fff;
+  --hover-color: #111;
+  --arrow-width: 10px;
+  --arrow-stroke: 2px;
+  margin-right: 5%;
+
+  box-sizing: border-box;
+  border: 0;
+  border-radius: 20px;
+  color: var(--secondary-color);
+  padding: 1em 1.8em;
+  background: var(--primary-color);
+  display: flex;
+  transition: 0.2s background;
+  align-items: center;
+  gap: 0.6em;
+  font-weight: bold;
+}
+
+button .arrow-wrapper {
+  display: flex;
+  /* para que el contenido se alinee horizontalmente */
+  justify-content: center;
+  /* para que el contenido se alinee horizontalmente */
+  align-items: center;
+  /* para que el contenido se alinee verticalmente */
+}
+
+button .arrow {
+  margin-top: 1px;
+  /* para que el icono se alinee verticalmente */
+  width: var(--arrow-width);
+  /* tamaño del icono */
+  background: var(--primary-color);
+  /* color de fondo */
+  height: var(--arrow-stroke);
+  position: relative;
+  transition: 0.2s;
+}
+
+button .arrow::before {
+  content: "";
+  box-sizing: border-box;
+  position: absolute;
+  border: solid var(--secondary-color);
+  border-width: 0 var(--arrow-stroke) var(--arrow-stroke) 0;
+  display: inline-block;
+  top: -3px;
+  right: 3px;
+  transition: 0.2s;
+  padding: 3px;
+  transform: rotate(-45deg);
+}
+
+button:hover {
+  background-color: var(--hover-color);
+}
+
+button:hover .arrow {
+  background: var(--secondary-color);
+}
+
+/* 
+    //Autores:
+    //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+*/
+
+button:hover .arrow:before {
+  right: 0;
+}

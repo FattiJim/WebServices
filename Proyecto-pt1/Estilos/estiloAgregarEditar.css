@@ -1,0 +1,266 @@
+h1 {
+  text-align: center;
+  margin-bottom: auto;
+  font-size: 20px;
+}
+
+#resultado {
+  display: none;
+  margin-top: 50px;
+  padding: 20px;
+  background-color: #d4d4d4;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: auto;
+  margin: 10px auto;
+  font-size: 13px;
+}
+
+#response {
+  display: none;
+  margin-left: 20px;
+  padding: 20px 50px 20px 50px;
+  background-color: #f0f0f0;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: 23%;
+  height: auto;
+  margin: 100px 750px -90px;
+  font-size: 13px;
+}
+
+/* 
+    //Autores:
+    //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+*/
+
+
+table li {
+  list-style: none;
+  text-decoration: none;
+  padding: 1px;
+}
+
+/* Estilos para el formulario */
+.formulario {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-bottom: 10px;
+  margin-top: 20px;
+}
+
+/* Estilos para las columnas */
+.columna {
+  margin: auto;
+  margin-block: 2px;
+  flex-basis: 50%;
+  padding: 5px 10px;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+/* Estilos para las etiquetas */
+label {
+  display: flex;
+  margin-bottom: 10px;
+
+}
+
+/* Estilos para los inputs */
+input {
+  display: flex;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  box-sizing: border-box;
+}
+
+/* Estilos para el boton del formulario */
+.boton-container {
+  display: block;
+  margin: auto;
+  justify-content: center;
+  align-items: center;
+  margin-top: 5px;
+  /* Agregar margen superior al contenedor del botón */
+  margin-bottom: 2px;
+  /* Agregar margen inferior al contenedor del botón */
+}
+
+
+.button {
+  border: 2px solid #6ba11a;
+  background-color: #6ba11a;
+  border-radius: 0.9em;
+  padding: 0.4em 3em 0.4em 3em;
+  transition: all ease-in-out 0.2s;
+  font-size: 16px;
+}
+
+.button span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  font-weight: 600;
+}
+
+.button:hover {
+  background-color: #598616;
+}
+
+/*Estilos para la tabla de datos*/
+.table {
+  width: auto;
+  /*margin-bottom: 20px;*/
+  /*Espacio entre la tabla y el elemento que le sigue*/
+  max-width: auto;
+  background-color: #fff;
+  border-collapse: collapse;
+  border-spacing: 1;
+  font-size: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+  width: auto;
+  margin: 10px auto;
+}
+
+.table td,
+.table th {
+  padding: 0.75rem;
+  vertical-align: middle;
+  border-top: 1px solid #dee2e6;
+}
+
+
+
+.table th {
+  text-align: center;
+  background-color: #f2f2f2;
+  border-bottom: 2px solid #dee2e6;
+}
+
+.table-responsive {
+  display: block;
+  overflow-y: auto;
+  /* Scroll vertical de la tabla */
+  margin-left: auto;
+  /*margin-bottom: 50%; */
+  margin-top: 110px;
+  width: 50%;
+  height: 80%;
+  margin: 8% 0%;
+  position: fixed;
+  left: 770px;
+  transform: translateX(-20%);
+  font-size: 13px;
+  /* border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); */
+}
+
+/* 
+    //Autores:
+    //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+*/
+
+.table tbody tr:nth-child(2n) {
+  background-color: #e7e5e5;
+}
+
+.table tbody tr:nth-child(2n+1) {
+  background-color: #fff;
+}
+
+/*Estilos para el boton de editar*/
+.Btn {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 34px;
+  border: 5px;
+  padding: 10px 10px;
+  background-color: #273b09;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: .3s;
+  margin: 0px 0px 5px 0px;
+}
+
+.svg {
+  width: 13px;
+  position: absolute;
+  right: 0;
+  margin-right: 20px;
+  fill: white;
+  transition-duration: .3s;
+}
+
+.Btn:hover {
+  color: transparent;
+  background-color: #273b09;
+}
+
+.Btn:hover svg {
+  right: 40%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn:active {
+  transform: translate(3px, 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px #131d13
+}
+
+/*Estilos para el boton de eliminar*/
+.Btn2 {
+  position: relative;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  height: 34px;
+  border: 5px;
+  padding: 10px 10px;
+  background-color: #181824;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 10px;
+  transition-duration: .3s;
+  margin: 0px 0px 5px 0px;
+}
+
+.Btn2:hover {
+  color: transparent;
+  background-color: #181824;
+}
+
+/* 
+    //Autores:
+    //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+*/
+
+.Btn2:hover svg {
+  right: 40%;
+  margin: 0;
+  padding: 0;
+  border: none;
+  transition-duration: .3s;
+}
+
+.Btn2:active {
+  transform: translate(3px, 3px);
+  transition-duration: .3s;
+  box-shadow: 2px 2px 0px #13131d
+}

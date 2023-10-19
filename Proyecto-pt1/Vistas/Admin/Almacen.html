@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+<!--
+    /* 
+        //Autores:
+        //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+    */
+-->
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Operaciones almacen</title>
+    <link rel="stylesheet" href="../../Estilos/estilos2.css">
+    <link rel="shortcut icon" href="../../Estilos/LogoIcon.ico">
+    <link rel="stylesheet" href="../../Estilos/estiloAgregarEditar.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="../../Javascript/operaciones.js"></script>
+
+    <!-- jQuery library -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+    <!-- DataTables library -->
+    <script src="https://cdn.datatables.net/1.10.25/js/jquery.dataTables.min.js"></script>
+    <!-- DataTables CSS -->
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.10.25/css/jquery.dataTables.min.css">
+
+</head>
+
+<body>
+    <nav>
+        <div class="logo">
+            <img src="../../Estilos/logo1.png" alt="Logo de la página">
+            <h2>IFFI Web Services</h2>
+        </div>
+
+        <ul class="nav nav-tabs">
+            <li class="nav-item">
+                <h4>Almacen</h4>
+                <a class="nav-link active">Administración de productos</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Administración de salarios</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link">Administración de usuarios</a>
+            </li>
+        </ul>
+    </nav>
+    <div class="new-nav">
+        <a>BIENVENIDO <p id="insert_name"></p></a>
+        <button class="buttonL">
+            Cerrar sesión
+            <div class="arrow-wrapper">
+                <div class="arrow"></div>
+            </div>
+        </button>
+    </div>
+
+    <main>
+        <div class="contenedor">
+            <h1 id="agregarT">Agregar producto</h1>
+            <form class="formulario" id="formularioAdd" action="/producto">
+                <div class="columna">
+
+                    <label for="categoria">Categoria:</label>
+                    <input type="text" name="Categoria" id="categoria">
+                    <label for="isbn">ISBN:</label>
+                    <input type="text" name="ISBN" id="isbn">
+
+                    <label for="autor">Autor:</label>
+                    <input type="text" name="Autor" id="autor">
+
+                    <label for="descuento">Descuento:</label>
+                    <input type="text" name="Descuento" id="descuento">
+                </div>
+
+                <div class="columna">
+                    <label for="editorial">Editorial:</label>
+                    <input type="text" name="Editorial" id="editorial">
+                    <label for="fecha">Fecha:</label>
+                    <input type="text" name="Fecha" id="fecha">
+
+                    <label for="nombre">Nombre:</label>
+                    <input type="text" name="Nombre" id="nombre">
+
+                    <label for="precio">Precio:</label>
+                    <input type="text" name="Precio" id="precio">
+                </div>
+                <div id="resultado"></div>
+                <div class="boton-container">
+                    <button class="button">
+                        <span>
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                <path fill="none" d="M0 0h24v24H0z"></path>
+                                <path fill="currentColor" d="M11
+                                        11V5h2v6h6v2h-6v6h-2v-6H5v-2z"></path>
+                            </svg>
+                            Agregar producto
+                        </span>
+                    </button>
+                    <!-- <button type="submit" id="btnAgregar" class="btnAgregar">Agregar Producto</button> -->
+                </div>
+            </form>
+        </div>
+        <div id="response"></div>
+        <div>
+            <div class="table-responsive" id="tabla-productos">
+                <table class="table" id="tabla-productos table">
+                    <thead>
+                        <tr>
+                            <th>ISBN</th>
+                            <th>Descripción</th>
+                            <th>Acciones</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td id="taskId"></td>
+                            <td></td>
+                            <td id="detalles"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </main>
+</body>
+<!--
+    /* 
+        //Autores:
+        //Britany Itaii Perez Cadena - Fatima Jimenez Bazan
+    */
+-->
+</html>
